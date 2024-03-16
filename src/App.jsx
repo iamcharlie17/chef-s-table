@@ -15,6 +15,7 @@ function App() {
       <NavBar></NavBar>
       {/* banner */}
       <Banner></Banner>
+      
       </body>
   
     </>
