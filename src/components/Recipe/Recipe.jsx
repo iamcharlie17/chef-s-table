@@ -13,7 +13,7 @@ const Recipe = ({ recipe,handleCook }) => {
   return (
     <div className=" p-8 border-2 border-dotted border-slate-500 rounded-xl space-y-4 bg-slate-200">
       
-      <img src={recipe.recipe_image} alt="" className=" rounded-xl w-full" />
+      <img src={recipe.recipe_image} alt="" className=" rounded-xl w-full h-80" />
       <h1 className=" text-2xl font-bold">{recipe.recipe_name}</h1>
       <p className=" mb-4 ">{recipe.short_description}</p>
       <hr />

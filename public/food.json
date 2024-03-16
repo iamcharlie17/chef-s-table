@@ -13,7 +13,7 @@
         "recipe_image": "https://i.ibb.co/NNRFZRR/spaghetti-bolognese.jpg",
         "recipe_id": 2,
         "recipe_name": "Spaghetti Bolognese",
-        "short_description": "Classic Italian spaghetti with meaty Bolognese",
+        "short_description": "Classic Italian spaghetti with meat",
         "ingredients": ["400 g spaghetti", "500 g minced beef", "1 onion", "2 cloves garlic", "400 g canned tomatoes", "2 tbsp tomato paste"],
         "preparing_time": 45,
         "calories": 420

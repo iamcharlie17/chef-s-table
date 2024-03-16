@@ -4,17 +4,22 @@ import Cooks from "../Cooks";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
+  const [newRecipe, setRecipe] =useState([]);
 
   useEffect(() => {
     fetch("food.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
+  // console.log(recipes)
 
   
   const handleCook = (recipe) =>{
+    
+    setRecipe([...newRecipe, recipe]);
       
   }
+  // console.log(newRecipe);
 
   return (
     <div>
@@ -33,7 +38,8 @@ const Recipes = () => {
 
           <div className=" grid grid-cols-2 gap-4">
             {recipes.map((recipe) => (
-              <Recipe 
+              <Recipe
+              key={recipe.recipe_id} 
               recipe={recipe}
               handleCook={handleCook}></Recipe>
             ))}
@@ -41,7 +47,7 @@ const Recipes = () => {
         </div>
         <div className=" w-1/3">
           <Cooks
-          ></Cooks>
+          newRecipe={newRecipe}></Cooks>
         </div>
       </div>
     </div>

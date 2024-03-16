@@ -4,15 +4,14 @@ const Cook = () => {
 
    
   return (
-    <tr className=" rounded-xl ">
-      <td className="">{}</td>
-      <td className="">{}</td>
-      <td className="">{} mins</td>
-      <td className="">{} calories</td>
-      <td className="">
-        <button className="btn bg-green-400 rounded-full">Preparing</button>
-      </td>
-    </tr>
+    <div className="flex justify-between">
+        <h1>NO:</h1>
+        <h1>Name</h1>
+        <h1>Time</h1>
+        <h1>Calories</h1>
+        <h1>Status</h1>
+    </div>
+    
   );
 };
 
