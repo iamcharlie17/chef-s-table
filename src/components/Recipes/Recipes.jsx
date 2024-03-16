@@ -15,8 +15,14 @@ const Recipes = () => {
 
   
   const handleCook = (recipe) =>{
-    
-    setRecipe([...newRecipe, recipe]);
+
+    const isExist = newRecipe.find(item => item.recipe_id == recipe.recipe_id )
+    if (!isExist){
+      setRecipe([...newRecipe, recipe]);
+    }
+    else{
+      alert("Your selection already exist!!")
+    }
       
   }
   // console.log(newRecipe);
