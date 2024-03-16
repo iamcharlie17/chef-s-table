@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <body className=' container max-h-screen'>
+      <body className=' container max-h-screen mx-auto'>
         {/* navbar */}
       <NavBar></NavBar>
       {/* banner */}

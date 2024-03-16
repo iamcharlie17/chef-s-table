@@ -3,12 +3,12 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100 ">
+    <div className="navbar bg-base-100 my-8 ">
       <div className="flex-1">
         <a className=" text-xl md:text-3xl font-bold">Recipe Calories</a>
       </div>
 
-      <div className=" hidden md: display">
+      <div className="">
         <ul className=" flex gap-4 justify-between items-center mr-11">
             <li>Home</li>
             <li>Recipes</li>
