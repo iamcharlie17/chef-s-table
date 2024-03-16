@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const NavBar = () => {
   return (
     <div className="navbar bg-base-100 my-8 ">
@@ -10,10 +9,10 @@ const NavBar = () => {
 
       <div className="">
         <ul className=" flex gap-4 justify-between items-center mr-11">
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>About</li>
-            <li>Search</li>
+          <li>Home</li>
+          <li>Recipes</li>
+          <li>About</li>
+          <li>Search</li>
         </ul>
       </div>
 
@@ -26,17 +25,7 @@ const NavBar = () => {
           />
         </div>
         <div className="dropdown dropdown-end">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle avatar"
-          >
-            
-                
-            
-          </div>
-         
-         
+          
         </div>
       </div>
     </div>

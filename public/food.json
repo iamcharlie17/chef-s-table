@@ -1,5 +1,5 @@
-{
-    "recipes": [
+
+     [
       {
         "recipe_image": "https://i.ibb.co/HhYGWWf/chicken-curry.jpg",
         "recipe_id": 1,
@@ -13,7 +13,7 @@
         "recipe_image": "https://i.ibb.co/NNRFZRR/spaghetti-bolognese.jpg",
         "recipe_id": 2,
         "recipe_name": "Spaghetti Bolognese",
-        "short_description": "Classic Italian spaghetti with meaty Bolognese sauce.",
+        "short_description": "Classic Italian spaghetti with meaty Bolognese",
         "ingredients": ["400 g spaghetti", "500 g minced beef", "1 onion", "2 cloves garlic", "400 g canned tomatoes", "2 tbsp tomato paste"],
         "preparing_time": 45,
         "calories": 420
@@ -23,7 +23,7 @@
         "recipe_id": 3,
         "recipe_name": "Vegetable Stir Fry",
         "short_description": "Colorful and healthy vegetable stir fry.",
-        "ingredients": ["300 g mixed vegetables (bell peppers, broccoli, carrots)", "150 g tofu", "2 tbsp soy sauce", "1 tbsp sesame oil", "1 clove garlic", "1 tsp ginger paste"],
+        "ingredients": ["300 g mixed vegetables", "150 g tofu", "2 tbsp soy sauce", "1 tbsp sesame oil", "1 clove garlic", "1 tsp ginger paste"],
         "preparing_time": 25,
         "calories": 250
       },
@@ -40,7 +40,7 @@
         "recipe_image": "https://i.ibb.co/Hg9pZ2p/caprese-salad.jpg",
         "recipe_id": 5,
         "recipe_name": "Caprese Salad",
-        "short_description": "Simple and elegant Italian salad with tomatoes, mozzarella, and basil.",
+        "short_description": "Simple and elegant Italian salad ",
         "ingredients": ["2 large tomatoes", "200 g fresh mozzarella cheese", "Handful of fresh basil leaves", "2 tbsp balsamic vinegar", "2 tbsp extra virgin olive oil", "Salt and pepper to taste"],
         "preparing_time": 15,
         "calories": 220
@@ -55,5 +55,5 @@
         "calories": 380
       }
     ]
-  }
+  
   
