@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -25,7 +26,9 @@ const NavBar = () => {
           />
         </div>
         <div className="dropdown dropdown-end">
-          
+          <div>
+              <button className="btn bg-green-400 text-xl rounded-full"><FaRegUserCircle></FaRegUserCircle></button>
+          </div>
         </div>
       </div>
     </div>

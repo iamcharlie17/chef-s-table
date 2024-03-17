@@ -5,6 +5,7 @@ import Cooks from "../Cooks";
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [newRecipe, setRecipe] =useState([]);
+  const [prepareRecipe, setPrepareRecipe] = useState([])
 
   useEffect(() => {
     fetch("food.json")
@@ -23,8 +24,19 @@ const Recipes = () => {
     else{
       alert("Your selection already exist!!")
     }
+  }
+
+  const handlePreparing = (r,id)=>{
+    const remainingRecipe = newRecipe.filter(recipe => id!=recipe.recipe_id)
+    setRecipe(remainingRecipe);
+
+    const isPrepareRecipe = prepareRecipe.find(item => item.recipe_id == r.recipe_id)
+    if(!isPrepareRecipe){
+      setPrepareRecipe([...prepareRecipe, r]);
+    }
       
   }
+  console.log(prepareRecipe);
   // console.log(newRecipe);
 
   return (
@@ -53,6 +65,8 @@ const Recipes = () => {
         </div>
         <div className=" w-1/3">
           <Cooks
+          prepareRecipe={prepareRecipe}
+          handlePreparing={handlePreparing}
           newRecipe={newRecipe}></Cooks>
         </div>
       </div>
