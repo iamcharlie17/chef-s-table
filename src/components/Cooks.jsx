@@ -58,10 +58,11 @@ const Cooks = ({ newRecipe,handlePreparing,prepareRecipe,totalTime,totalCal }) =
             }
         </div>
       
-      <div className="grid grid-cols-3 p-4  ">
-        <h1>Total  = </h1>
-        <h1>{totalTime} minutes</h1>
-        <h1>{totalCal} calories</h1>
+      <div className="grid grid-cols-4 p-4  ">
+        <h1></h1>
+        <h1>Total   = </h1>
+        <h1 className="font-bold pr-4">{totalTime} minutes</h1>
+        <h1 className="font-bold pr-4">{totalCal} calories</h1>
       </div>
 
     </div>
