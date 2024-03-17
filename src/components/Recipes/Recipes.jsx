@@ -5,7 +5,11 @@ import Cooks from "../Cooks";
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [newRecipe, setRecipe] =useState([]);
-  const [prepareRecipe, setPrepareRecipe] = useState([])
+  const [prepareRecipe, setPrepareRecipe] = useState([]);
+  let [totalTime, setTotalTime] = useState(0);
+  let [totalCal, setTotalCal] =useState(0);
+  
+  
 
   useEffect(() => {
     fetch("food.json")
@@ -17,6 +21,7 @@ const Recipes = () => {
   
   const handleCook = (recipe) =>{
 
+
     const isExist = newRecipe.find(item => item.recipe_id == recipe.recipe_id )
     if (!isExist){
       setRecipe([...newRecipe, recipe]);
@@ -27,6 +32,13 @@ const Recipes = () => {
   }
 
   const handlePreparing = (r,id)=>{
+
+    totalTime = totalTime + r.preparing_time;
+    setTotalTime(totalTime);
+
+    totalCal = totalCal + r.calories;
+    setTotalCal(totalCal);
+
     const remainingRecipe = newRecipe.filter(recipe => id!=recipe.recipe_id)
     setRecipe(remainingRecipe);
 
@@ -34,9 +46,11 @@ const Recipes = () => {
     if(!isPrepareRecipe){
       setPrepareRecipe([...prepareRecipe, r]);
     }
-      
   }
-  console.log(prepareRecipe);
+
+  // console.log(totalCal);
+  // console.log(totalTime);
+  // console.log(prepareRecipe);
   // console.log(newRecipe);
 
   return (
@@ -65,6 +79,8 @@ const Recipes = () => {
         </div>
         <div className=" w-1/3">
           <Cooks
+          totalCal={totalCal}
+          totalTime={totalTime}
           prepareRecipe={prepareRecipe}
           handlePreparing={handlePreparing}
           newRecipe={newRecipe}></Cooks>

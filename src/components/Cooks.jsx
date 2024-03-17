@@ -3,10 +3,9 @@ import React from "react";
 import Cook from "./Cook/Cook";
 import Recipe from "./Recipe/Recipe";
 
-const Cooks = ({ newRecipe,handlePreparing,prepareRecipe }) => {
+const Cooks = ({ newRecipe,handlePreparing,prepareRecipe,totalTime,totalCal }) => {
 
-    let totalTime = parseInt(0);
-    let totalCal = 0;
+   
 
     // console.log(newRecipe)
   return (
@@ -61,17 +60,8 @@ const Cooks = ({ newRecipe,handlePreparing,prepareRecipe }) => {
       
       <div className="grid grid-cols-3 p-4  ">
         <h1>Total  = </h1>
-        <h1>{
-                prepareRecipe.map(r=>(
-                    totalTime + r.preparing_time
-                    ))
-                
-            } minutes</h1>
-        <h1>{
-                prepareRecipe.map(r => (
-                    totalCal+r.calories
-                ))
-            } calories</h1>
+        <h1>{totalTime} minutes</h1>
+        <h1>{totalCal} calories</h1>
       </div>
 
     </div>
